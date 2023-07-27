@@ -1635,7 +1635,7 @@ InnoDB实现了以下两种类型的行锁：
 | update      			| 排他锁  　   | 自动加锁				 |
 | delete     			| 排他锁       | 自动加锁 　　　　　　　　　　　　　　    |
 | select 			| 不加任何锁　 | 					   |
-| select　lock　in　share mode  | 排他锁       | 需要手动在SELECT之后加LOCK IN SHARE MODE |
+| select　lock　in　share mode  | 共享锁       | 需要手动在SELECT之后加LOCK IN SHARE MODE |
 | select　for　update	      | 排他锁 	  | 需要手动在SELECT之后加FOR UPDATE 　　　　|
 
 行锁 - 演示  
